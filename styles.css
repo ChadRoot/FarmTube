@@ -1,0 +1,137 @@
+* {
+  margin:0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+img {
+  cursor: pointer;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+.nav-left .menu-icon{
+  width: 22px;
+}
+.nav-left .logo {
+  margin-left: 25px;
+  width: 120px;
+}
+.nav-right i {
+  margin-right: 25px;
+}
+.nav-right img {
+  width: 25px;
+  border-radius: 50%;
+}
+.nav-middle .search-icon {
+  margin: 0px;
+  height: 42px;
+  width: 40px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-middle .search-box input {
+  border: 1px solid #ccc;
+  padding: 8px 1px 8px 12px;
+}
+.nav-middle .mic-icon {
+  margin: 0px 10px;
+  height: 42px;
+  width: 42px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-top: 80px;
+}
+.sidebar-nav-item:hover {
+  background-color: #eee;
+}
+.shortcut-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 0;
+  padding-left: 24px;
+}
+.shortcut-link:hover {
+  color: black;
+}
+.shortcut-link img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.shortcut-link svg {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.scltext {
+  padding-left: 20px;
+  margin: 0;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: nowrap;
+}
+.sidebar-hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  width: 85%;
+}
+.subscriptions-header {
+  color: #606060;
+  font-size: 14px;
+    padding-left: 24px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .sidebar {
+    width: 10%;
+  }
+  .shortcut-link {
+    padding-left: 0px;
+  }
+  .shortcut-link {
+    flex-direction: column;
+  }
+  .scltext {
+    padding-left: 0px;
+    font-size: 10px;
+  }
+  .sidebar-subs {
+    display: none;
+  }
+}

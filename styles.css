@@ -15,7 +15,7 @@ img {
 .flex-nav {
   display: flex;
   align-items: center;
-  padding: 10px 2%;
+  padding: 0px 2%;
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -68,7 +68,7 @@ img {
 .sidebar {
   background-color: #fff;
   width: 15%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   padding-top: 80px;
@@ -80,8 +80,8 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 16px 0;
   padding-left: 24px;
+  height: 40px;
 }
 .shortcut-link:hover {
   color: black;
@@ -117,13 +117,21 @@ img {
     padding-left: 24px;
 }
 
+
+
 .small-sidebar {
   width: 10%;
   max-width: 145px;
 }
+.small-sidebar .shortcut-links {
+  height: 100vw;
+}
 .small-sidebar .shortcut-link {
   padding-left: 0px;
   flex-direction: column;
+}
+.small-sidebar .sidebar-nav-item {
+  padding: 16px 0px 14px 0px;
 }
 .small-sidebar .scltext {
   padding-left: 0px;
@@ -132,20 +140,34 @@ img {
 .small-sidebar .sidebar-subs {
   display: none;
 }
+.small-sidebar .sidebar-hr {
+  display: none;
+}
+.small-sidebar .dnone {
+  display: none;
+}
+
 
 @media only screen and (max-width: 1080px) {
   .sidebar {
     width: 10%;
+    max-width: 145px;
   }
   .shortcut-link {
     padding-left: 0px;
     flex-direction: column;
+  }
+  .sidebar-nav-item {
+    padding: 16px 0px 14px 0px;
   }
   .scltext {
     padding-left: 0px;
     font-size: 10px;
   }
   .sidebar-subs {
+    display: none;
+  }
+  .dnone, .sidebar-hr {
     display: none;
   }
 }

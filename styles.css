@@ -117,14 +117,28 @@ img {
     padding-left: 24px;
 }
 
+.small-sidebar {
+  width: 10%;
+  max-width: 145px;
+}
+.small-sidebar .shortcut-link {
+  padding-left: 0px;
+  flex-direction: column;
+}
+.small-sidebar .scltext {
+  padding-left: 0px;
+  font-size: 10px;
+}
+.small-sidebar .sidebar-subs {
+  display: none;
+}
+
 @media only screen and (max-width: 1080px) {
   .sidebar {
     width: 10%;
   }
   .shortcut-link {
     padding-left: 0px;
-  }
-  .shortcut-link {
     flex-direction: column;
   }
   .scltext {

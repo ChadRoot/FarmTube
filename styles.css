@@ -186,17 +186,21 @@ img {
   margin-bottom: 5px;
 }
 .video-title {
-  font-size: 1.4rem;
-  line-height: 2rem;
-  max-height: 4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  max-height: 56px;
+  max-width: 100%;
   font-weight: 500;
   margin: 12px 0px 4px 0px;
   color: #030303;
   
-  text-overflow: ellipsis;
   overflow: hidden;
-  white-space: break-spaces;
-  word-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .video-channel, .video-views {
   font-size: 12px;

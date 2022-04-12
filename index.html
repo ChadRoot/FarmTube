@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://kit.fontawesome.com/2cd337b192.js" crossorigin="anonymous"></script>
 </head>
@@ -23,10 +27,15 @@
       </div>
       <div class="nav-middle flex-div">
         <div class="search-box flex-div">
-          <input type="text" placeholder="Search">
-          <div class="search-icon">
+         
+          <form action="http://www.youtube.com/results" method="get" target="_blank" id="search-form" >
+            <input name="search_query" type="text" maxlength="128" placeholder="Search">
+          </form>
+          <div class="search-icon" id="search-submit">
             <i class="fas fa-search"></i>
           </div>
+         
+
         </div>
         <div class="mic-icon">
           <i class="fas fa-microphone"></i>

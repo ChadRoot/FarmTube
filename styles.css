@@ -19,7 +19,8 @@ img {
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  position: sticky;
+  position: fixed;
+  width: 100vw;
   top: 0;
   z-index: 10;
 }
@@ -53,6 +54,7 @@ img {
 .nav-middle .search-box input {
   border: 1px solid #ccc;
   padding: 8px 1px 8px 12px;
+  width: 400px;
 }
 .nav-middle .mic-icon {
   margin: 0px 10px;
@@ -150,8 +152,8 @@ img {
 /* main content css */
 .contain {
   background-color: #f9f9f9;
-  padding: 20px 2% 20px 17%;
-  min-height: 100vw;
+  padding: 76px 2% 20px 17%;
+  min-height: 100%;
 }
 .large-contain {
   padding-left: 9%;
@@ -238,6 +240,9 @@ img {
   .dnone, .sidebar-hr {
     display: none;
   }
+  .contain {
+    padding: 76px 2% 20px 12%;
+  }
 }
 @media only screen and (max-width: 960px) {
   .nav-middle {
@@ -256,4 +261,5 @@ img {
   .contain {
     padding: 20px 5%;
   }
+
 }
